@@ -1,4 +1,6 @@
 # Variable assignment
-'''valid_variable = 10
+'''
+valid_variable = 10
 _valid = "Okay"
-valid123 = 5.6'''
+valid123 = 5.6
+'''

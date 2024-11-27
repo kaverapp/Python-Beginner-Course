@@ -46,6 +46,8 @@ print(x)  # Output: 8.0
 print(True and True)  # Output: True
 print(True and False) # Output: False
 print(False or True)  # Output: True
+print()#output:
+print()#output:
 print(True or False)  # Output: True
 print(not True)       # Output: False
 print(not False)      # Output: True
