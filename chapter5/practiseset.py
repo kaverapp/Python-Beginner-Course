@@ -80,6 +80,7 @@ print(_dict_)                 #output=>{'Rahul': 'python', 'Rohan': 'python', 'R
 
 #if languages of two friends are same what will happen to program in problem 6
 
+'''
 _dict_={
     "Rahul":input("enter any language:"),
     "Rohan":input("enter any language:"),
@@ -87,3 +88,19 @@ _dict_={
 }
 
 print(_dict_)                 #output=>{'Rahul': 'python', 'Rohan': 'python', 'RaMU': 'python'} 
+'''
+
+#can u change the values inside a list which is contained in set
+  #No i cant change them
+'''
+_set_={1,2,3,["hello","lion",True],5}
+_set_[3]="jaja"
+print(_set_)                 #output=>TypeError: unhashable type: 'list'    because sets in Python cannot contain mutable types, such as lists. A list is mutable and cannot be added as an element to a set. This will raise a TypeError.
+'''
+
+'''
+_list_=[1,3,4,{23,"hello",787},False]
+_list_[3].add("harry")
+print(_list_)                 #output=> [1, 3, 4, {'harry', 787, 'hello', 23}, False]   not in order because,Sets are unordered collections, meaning their elements may not appear in the order you added them.
+print(type(_list_[3]))        #output=> <class `set`>
+'''
