@@ -83,3 +83,57 @@ print(sum_all(1,2,3,6,6,97,23,13))
 print(sum_all(1,2,3,6,98,45,4))
 
 '''
+
+
+#wap using function to find greatest of three numbers
+'''
+def greatest(num1,num2,num3):
+    if (num1>num2 and num1>num3):
+        return num1
+    elif(num2>num3):
+        return num2
+    else:
+        return num3
+print(greatest(10,20,30))
+'''
+
+#wap using function to convert celcius to gahreneit
+'''
+def convert(celcius):
+    fahrenheit=(celcius*9/5)+32
+    return fahrenheit
+print(convert(10))
+'''
+
+#how do you prevent a python print() function to print a new line at end
+
+'''
+def print_no_newline(arg):
+    print(arg,end="")
+
+print_no_newline("hello")
+print_no_newline("world")
+'''
+
+#write a recursive function to calculate the sum of first n natural numbers
+
+'''
+def sum(n):
+    if n==1 or n==0:
+        return 1
+    else:
+        return n+sum(n-1)
+print(sum(5))
+'''
+#write a function to print first n lines of the following pattern
+# ***
+# **
+# *
+
+def patrn(n):
+    if n > 0:                 # Base case: stop when n reaches 0
+
+        print("*"*n)
+        patrn(n-1)
+
+patrn(3)
