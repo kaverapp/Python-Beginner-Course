@@ -129,7 +129,7 @@ print(sum(5))
 # ***
 # **
 # *
-
+'''
 def patrn(n):
     if n > 0:                 # Base case: stop when n reaches 0
 
@@ -137,3 +137,26 @@ def patrn(n):
         patrn(n-1)
 
 patrn(3)
+'''
+
+#wap function which converts inches to cms
+'''
+inch=1
+
+def inchtocm(inch):
+    cm=inch*2.54
+    return cm
+print(inchtocm(inch))
+'''
+
+#wap function to remove a given word from a list and strip it at the same time
+'''
+def strip_n(lst,rm_wrd):
+    chck=rm_wrd.strip()
+    s_rip=[item.strip() for item in lst if chck not in item.strip() ]
+    print(s_rip)
+
+lst=["harry1","larry2 "," harry3  "]
+
+strip_n(lst,"harry")
+'''
